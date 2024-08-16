@@ -15,7 +15,6 @@ import CHAI_LOGO from "../../assets/chai.png"
 export default function RandomJokes() {
     const { data, loading, error, refetch } = useFetch(RANDOM_JOKES_API)
 
-    console.log(data)
     return (
         <>
         <div className={styles.body} />

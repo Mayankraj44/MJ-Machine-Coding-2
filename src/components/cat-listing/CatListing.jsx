@@ -30,7 +30,6 @@ export default function CatListing() {
         refetch()
     },[currentPage])
 
-    console.log(catData)
     
     return (
         <>
