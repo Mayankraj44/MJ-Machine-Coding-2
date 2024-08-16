@@ -1,42 +1,128 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+body{
+  margin:0;
+}
+.pointer{
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/* Shimmer */
+.scard{
+  min-width: 375px;
+  height: 656px;
+  overflow: hidden;
+  border-radius: 16px;
+   
+}
+.simg {
+ min-width: 375px;
+ height: 325px;
+ background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+}
+
+.scontent {
+  padding: 12px
+}
+
+.sname {
+  height:36px;
+  width: 40%;
+}
+
+.sdescription {
+ height: 37px;
+
+}
+
+
+
+.detail {
+  display: flex;
+  gap: 40px;
+}
+
+.detail-2 {
+
+  margin-bottom: 8px;
+}
+
+.heading {
+  width: 34px;
+  height: 18px;
+
+}
+
+.value {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.23px;
+  letter-spacing: -0.04em;
+  text-align: left;
+
+}
+
+footer {
+  font-family: DM Sans;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 10.42px;
   text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pill-container{
+  display: flex;
+  gap:8px;
+  flex-wrap: wrap;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.pill {
+  background-color: rgba(239, 239, 239, 1);
+  border-radius: 22px;
+  color: rgba(53, 53, 53, 1);
+  font-family: DM Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.62px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  padding: 4px 8px;
+  cursor: pointer;
+ 
+
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.pill:hover{
+  background-color: rgba(212, 130, 219, 1);
+  color:rgba(255, 255, 255, 1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.link {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.23px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  color: rgba(125, 153, 226, 1);
+  position: absolute;
+  bottom: 10px;
+}
+
+.shimmer{
+  background: linear-gradient(-45deg, #eee 40%, #fafafa 50%, #eee 60%);
+   background-size: 300%;
+   background-position-x: 100%;
+   animation: shimmer-animation 1s infinite linear;
+}
+
+@keyframes shimmer-animation {
   to {
-    transform: rotate(360deg);
+     background-position-x: 0%
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

@@ -1,0 +1,188 @@
+.body {
+    background-image: url("../../assets/user/user-bg.jpg");
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.parentContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 358px;
+    background-color: #B6B3F3;
+    border-radius: 8px;
+    padding: 20px;
+    padding-bottom: 100px;
+    position: relative;
+    outline: solid 8px white;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.headerText {
+    color: #000000B2;
+    font-size: 16px;
+}
+
+.imgParent {
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0
+}
+
+.imgContainer span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 12px;
+    font-size: 8px;
+    padding: 2px 6px;
+
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    box-shadow: 1px 1px 4px 0px #00000040;
+
+}
+
+.name {
+    font-family: Donegal One;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    margin: unset;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.username {
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.62px;
+    letter-spacing: 0.04em;
+    margin: unset;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.actionContainer {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+    border-bottom: solid 1px #00000014;
+    border-top: solid 1px #00000014;
+    padding: 10px 0px;
+    margin: 10px 0
+}
+
+.actionContainer a {
+    font-family: DM Sans;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 11.72px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px
+}
+
+.iconContainer {
+    width: 22px;
+    height: 22px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    text-align: left;
+    grid-gap: 10px;
+}
+
+.heading {
+    font-family: DM Sans;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 11.72px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.value {
+    font-family: DM Serif Text;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.68px;
+    margin: 0
+}
+
+footer {
+    font-family: DM Sans;
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 10.42px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.chaiLogo {
+    width: 60px;
+    height: 62px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
